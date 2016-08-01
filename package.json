@@ -12,7 +12,13 @@
   "dependencies": {
     "highlight.js": "^8.4.0",
     "markdown-it": "^3.0.3",
-    "send": "~0.1.0",
-    "socket.io": ""
-  }
+    "send": "0.11.1",
+    "socket.io": "",
+    "snyk": "^1.17.5"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
